@@ -1,0 +1,215 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package CSE303.BasicJavaSyntax;
+
+public class AllPatterns {
+    public AllPatterns() {
+    }
+
+    static void pattern_1(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i; ++j) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_2(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= n - i; ++j) {
+                System.out.print(" ");
+            }
+
+            for(int var3 = 1; var3 <= i; ++var3) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_3(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= n - i + 1; ++j) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_4(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i - 1; ++j) {
+                System.out.print(" ");
+            }
+
+            for(int var3 = 1; var3 <= n - i + 1; ++var3) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_5(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= n - i; ++j) {
+                System.out.print(" ");
+            }
+
+            for(int var3 = 1; var3 <= i; ++var3) {
+                if (var3 > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_6(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i - 1; ++j) {
+                System.out.print(" ");
+            }
+
+            for(int var3 = 1; var3 <= n - i + 1; ++var3) {
+                if (var3 > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_7(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i; ++j) {
+                if (j > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print(i);
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_8(int n) {
+        int k = 1;
+
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i; ++k) {
+                if (j > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print(k);
+                ++j;
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_9(int n) {
+        int k = 1;
+
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= 2 * (n - i); ++j) {
+                System.out.print(" ");
+            }
+
+            for(int var4 = 1; var4 <= i; ++k) {
+                if (var4 > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print(k);
+                ++var4;
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_10(int n) {
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= 2 * (n - i); ++j) {
+                System.out.print(" ");
+            }
+
+            int var3;
+            for(var3 = i; var3 <= 2 * i - 1; ++var3) {
+                if (var3 > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print(var3);
+            }
+
+            for(int var4 = var3 - 2; var4 >= i; --var4) {
+                System.out.print(" " + var4);
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_11(int n) {
+        for(int i = 1; i <= n; ++i) {
+            char ch = (char)(65 + i - 1);
+
+            for(int j = 1; j <= i; ++j) {
+                if (j > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print(ch);
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_12(int n) {
+        int k = 0;
+
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= i; ++k) {
+                if (j > 1) {
+                    System.out.print(" ");
+                }
+
+                System.out.print((char)(65 + k));
+                ++j;
+            }
+
+            System.out.println();
+        }
+
+    }
+}
