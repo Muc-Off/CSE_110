@@ -1,0 +1,153 @@
+package cse110.basicjavasyntax;
+
+
+public class AllPatterns {
+    static void pattern_1(int n) {
+        int i, j;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_2(int n) {
+        int i, j ,k;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= n-i; j++) {
+                System.out.print(" ");
+            }
+            for(k = 1; k <= i;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_3(int n) {
+        int i, j;
+        for (i = n; i >= 1; i--) {
+            for (j = i; j >= 1; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_4(int n) {
+        int i, j ,k;
+        for (i = n; i >= 1; i--) {
+            for (j = 1; j <= n-i ; j++) {
+                System.out.print(" ");
+            }
+            for(k = 1; k <= i ; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_5(int n) {
+        int i, j ,k;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= n-i; j++) {
+                System.out.print(" ");
+            }
+            for(k = 1; k <= i;k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_6(int n) {
+        int i, j ,k;
+        for (i = n; i >= 1; i--) {
+            for (j = 1; j <= n-i ; j++) {
+                System.out.print(" ");
+            }
+            for(k = 1; k <= i ; k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_7(int n) {
+       //  int i, j;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_8(int n) {
+             int i, j, num=1;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                System.out.print(num); num++ ;
+            }
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_9(int n) {
+        int i, j, num,k;
+        for (i = 1; i <= n; i++) { num=i;
+                for(k = 1; k <= n-i; k++) {
+                    System.out.print(" ");
+                }
+            for (j = 1; j <= i; j++) {
+                System.out.print(num); num++ ;
+            }
+            System.out.println();
+        }
+
+    }
+
+    static void pattern_10(int n) {
+        int i, j ,k ,l ,num,num2;
+        for (i = 1; i <= n; i++) { num = i ;
+            for (l = 1; l <= n-i; l++) {
+                System.out.print(" ");
+            }
+            for(j = 1; j <= i; j++){
+                System.out.print(num); num++ ;
+            }
+            num2=num-2;
+            for(k = i-1; k >= 1;k--){
+                System.out.print(num2); num2--;
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_11(int n) {
+        char ch = 'A';
+        int i ,j ;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j <= i; j++) {
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_12(int n) {
+        char ch = 'A';
+        int i ,j ;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j <= i; j++) {
+                System.out.print(ch); ch++;
+            }
+            System.out.println();
+        }
+    }
+
+
+                        }
